@@ -1,0 +1,6 @@
+{
+  "name": "Ocean Odyssey",
+  "description": "A premium cinematic underwater exploration showcase with immersive visual depth and futuristic glassmorphic interfaces.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
