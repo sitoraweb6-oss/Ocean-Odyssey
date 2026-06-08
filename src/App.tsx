@@ -12,6 +12,7 @@ import Testimonials from "./components/Testimonials";
 import FAQ from "./components/FAQ";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import { CoreFloatingAttribution } from "./components/core-attribution";
 
 export default function App() {
   const [coords, setCoords] = useState({ x: -100, y: -100 });
@@ -155,6 +156,9 @@ export default function App() {
 
         {/* Footer directories */}
         <Footer />
+
+        {/* Reusable Core Floating Attribution */}
+        <CoreFloatingAttribution />
 
         {/* REAL-TIME COMMAND TELEMETRY ticker overlayed inside the left side margins */}
         <div 

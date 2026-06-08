@@ -1,5 +1,6 @@
 import { motion } from "motion/react";
 import { Waves, Twitter, Instagram, Facebook, ArrowUp, Compass, Anchor, Cpu } from "lucide-react";
+import { CoreFooterAttribution } from "./core-attribution";
 
 export default function Footer() {
   const handleScrollToTop = () => {
@@ -103,9 +104,13 @@ export default function Footer() {
 
         {/* Bottom copy row */}
         <div className="flex flex-col sm:flex-row justify-between items-center gap-4 pt-8 border-t border-white/5 text-[10px] font-mono text-gray-600" id="footer-bottom-bar">
-          <div className="flex items-center gap-2">
-            <Cpu className="w-3.5 h-3.5 text-[#0df2c9]/30" />
-            <span>© {currentYear} OCEAN ODYSSEY DEEP EXPEDITIONS INC. RELEASE APPROVED.</span>
+          <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
+            <div className="flex items-center gap-2">
+              <Cpu className="w-3.5 h-3.5 text-[#0df2c9]/30" />
+              <span>© {currentYear} OCEAN ODYSSEY DEEP EXPEDITIONS INC. RELEASE APPROVED.</span>
+            </div>
+            <div className="hidden md:block w-px h-3 bg-white/10" />
+            <CoreFooterAttribution />
           </div>
 
           {/* Scroll to Top */}
